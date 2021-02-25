@@ -1,0 +1,203 @@
+
+html {
+    background-image: url('../../big/images/vectorbackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    background-color: #fcf6f3;
+    width: 80%;
+    margin:auto;
+    padding-top: 2em;
+    border:1px solid #4c4663;
+}
+
+h1 a {
+    text-decoration: none;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    
+
+}
+
+h2.subheader {
+    margin: 1em;
+}
+
+.subheader {
+    margin: 1.5em;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+section {
+    float:left;
+    width:60%;
+    margin: auto;
+    font-family: Arial, sans-serif; 
+}
+
+aside {
+    float:right;
+    width:39%;
+    font-family: Arial, sans-serif; 
+} 
+
+footer {
+    padding:1em;
+    text-align: center;
+    clear: both;
+}
+
+.fullwidth {
+    width:100%;
+}
+
+div.gallery {
+    text-align: center;
+}
+
+figure {
+    display: inline-block;
+    margin: .25%;
+}
+
+p {
+    margin: 2em;
+    line-height: 30px;
+    vertical-align: top;
+    width: 80%;
+    font-family: Arial, sans-serif; 
+}
+
+form {
+    padding: 10px;
+}
+
+img {
+    padding: 20px;
+    vertical-align: top;
+    width: 80%;
+    margin:auto;
+}
+a {
+    text-decoration: none;
+}
+a:link { 
+    color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+dl
+{
+    margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+    padding: 1px;
+    word-break: break-all;
+    line-height: 25px;
+    margin: 2em;
+    
+    
+}
+
+dt{
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 14px;
+    
+}
+
+dd {
+    font-size: 12px;
+    
+}
+
+ul{
+    line-height: 30px;
+    margin: 2em;
+}
+  
+    
+/*EMBED STYLES RESPONSIVELY*/
+
+.embed-container { 
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 56.25%; 
+    height: 0; 
+    overflow: hidden; 
+    max-width: 100%; 
+}
+
+.embed-container iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+address {
+    margin: 2em;
+}
+
+/*END - EMBED STYLES RESPONSIVELY*/
+
+/* CALENDAR RULES FOR DESKTOP */
+
+@media all and (min-width:1400px) {
+    
+    /* Hide Agenda View Calendar */
+    .embed-container.agenda-view {
+        display: none;
+    }
+    
+    /* Show Month View Calendar */
+    .embed-container.month-view {
+        display:block;
+    }
+}
+    
+/*CALENDAR RULES FOR PHONE */
+@media all and (max-width:1400px) {
+    
+    /* Show Agenda View Calendar */
+    .embed-container.agenda-view {
+        display: block;
+    }
+    
+    /* Hide Month View Calendar */
+    .embed-container.month-view {
+        display:none;
+    }
+}
+
+
+/*MOBILE STYLES*/
+
+@media all and (max-width:600px) {
+    
+    main {
+    background-color:#fff;
+    width: 100%;
+    border:1px solid black;
+    }
+    
+    section {
+    float:none;
+    width:100%;
+    }
+
+    aside {
+    float:none;
+    width:100%;
+    } 
+    
+}
